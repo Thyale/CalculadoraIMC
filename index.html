@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Calculadora IMC</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div id="central">
+        <div id="titulo">
+          <h1>Calculadora IMC</h1>
+        </div>
+
+        <div id="medidas">
+          <div id="medidas_peso">
+            <p>Peso em kg</p>
+            <div>
+              <span class="material-symbols-outlined">weight</span>
+              <input type="number" name="peso" id="peso" autocomplete="off"/>
+              <p>Kg</p>
+            </div>
+          </div>
+          <div id="medidas_altura">
+            <p>Altura em metros</p>
+            <div>
+              <span class="material-symbols-outlined">height</span>
+              <input
+                type="number"
+                name="altura"
+                id="altura"
+                autocomplete="off"
+              />
+              <p>M</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="calc">
+          <input type="submit" value="Calcular" onclick="calcular()" />
+        </div>
+
+        <div id="resposta">
+          <div>
+            <p class="valor"></p>
+            <p>Seu imc</p>
+          </div>
+          <p class="res"></p>
+        </div>
+
+        <div id="link">
+          <a href="https://www.tuasaude.com/imc/" target="_blank"
+            >Mais informações sobre IMC</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

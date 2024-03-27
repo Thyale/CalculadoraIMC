@@ -1,0 +1,163 @@
+@media all {
+  /*gerais*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body {
+    background-image: url(./img/backgrount.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  /*main*/
+
+  #central {
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 3px 3px 15px black;
+    padding: 2em 1em;
+    border-radius: 20px;
+    width: 300px;
+  }
+
+  #titulo h1 {
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgba(254, 254, 254, 0.542);
+    padding-bottom: 10px;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  #medidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+    color: rgb(0, 0, 0);
+  }
+
+  #medidas_peso {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 5px;
+  }
+
+  #medidas_peso div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    gap: 5px;
+  }
+
+  #medidas_peso div input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  #medidas_altura {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 5px;
+  }
+
+  #medidas_altura div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    gap: 5px;
+  }
+
+  #medidas_altura div input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+
+  #calc {
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  #calc input {
+    width: 80%;
+    padding: 3px;
+    border: none;
+    color: white;
+    background-color: rgba(255, 68, 0, 0.874);
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+
+  #resposta {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    color: rgba(0, 0, 0, 0.852);
+    display: flex;
+    padding: 1em 0.5em;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    gap: 5px;
+    align-items: center;
+    display: none;
+  }
+
+  #resposta div {
+    width: 40%;
+    align-items: center;
+  }
+
+  .valor {
+    color: rgba(255, 68, 0, 0.874);
+    font-size: 30px;
+  }
+
+  #link {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 1em;
+    display: none;
+  }
+
+  #link a {
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+    text-align: center;
+  }
+}
