@@ -24,7 +24,7 @@ function calcular() {
   let aparecer2 = window.document.querySelector("div#link")
   aparecer2.style.display = "block"
 
-  if(peso == "" && altura == ""){
+  if(peso == "" || altura == ""){
     resnumber.innerHTML = "---"
     restext.innerHTML = "Digite os valores antes de calcular!"
   }
